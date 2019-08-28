@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="browser.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  </head>
+
+  <body>
+    <h2 id="errorlog"></h2>
+    <h2>DECA DATABASE</h2>
+    <br><br>
+    <h4> Nombre de la base: </h4>
+    <h5 id="dbname"></h5>
+  
+
+ 
+    <input id="dbaddress" type="text" placeholder="Address"/>
+    <button id="open" type="button" disabled>Abrir</button>
+    <input id="readonly" type="checkbox" checked> Read-only
+    <br><br>
+    <div id="status">Init</div>
+    <div>
+      <header id="output-header"></header>
+      <div id="output"></div>
+    </div>
+    <div id="writerText"></div>
+
+    <script type="text/javascript" src="./modulos/orbitdb.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./modulos/index.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="main.js" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+      // Start the example
+      main()
+    </script>
+  </body>
+</html>
